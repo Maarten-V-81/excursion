@@ -31,6 +31,7 @@ text-align: center;
 
 body {
     text-align: center;
+    overflow-x: hidden;
 }
 
 .video {
@@ -38,7 +39,11 @@ body {
     margin-bottom: 30px;
 }
 
-.image {
+.image-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
     h2 {
         margin-bottom: 30px;
     }
@@ -48,6 +53,16 @@ body {
     img {
         margin-bottom: 20px;
     }
+    max-width: 100%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .coming-soon {
@@ -59,4 +74,18 @@ body {
 footer {
 text-align: right;
 margin: 20px 10px 20px 0;
+}
+
+/* media querie mobile */
+
+@media screen and (max-width: 320px) {
+    h1 {
+       font-size: 24px; 
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
 }
