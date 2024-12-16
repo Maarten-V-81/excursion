@@ -31,7 +31,6 @@ text-align: center;
 
 body {
     text-align: center;
-    overflow-x: hidden;
 }
 
 .video {
@@ -40,10 +39,6 @@ body {
 }
 
 .image-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 100%;
     h2 {
         margin-bottom: 30px;
     }
@@ -54,12 +49,10 @@ body {
         margin-bottom: 20px;
     }
     max-width: 100%;
+    height:auto;
 }
 
-.image {
-    display: flex;
-    justify-content: center;
-    flex-shrink: 1;
+.image-text img {
     max-width: 100%;
     height: auto;
 
@@ -87,5 +80,8 @@ margin: 20px 10px 20px 0;
     }
     p {
         font-size: 16px;
+    }
+    .image-text img {
+        margin: 0 10px;
     }
 }
